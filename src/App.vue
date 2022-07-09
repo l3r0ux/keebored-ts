@@ -9,7 +9,6 @@ import "@/assets/tailwind.css";
     <router-link to="/detail">Detail</router-link>
   </nav> -->
 
-  <!-- TODO: put header here -->
   <header
     class="fixed top-0 left-0 flex items-center justify-center w-full h-14 text-2xl bg-primary-base text-primary-lighten2"
   >
@@ -20,9 +19,10 @@ import "@/assets/tailwind.css";
     <span>*icon* KeeBORED</span>
   </header>
 
-  <router-view />
+  <main class="pt-14 pb-14 px-6 bg-primary-darken1 min-h-screen">
+    <router-view />
+  </main>
 
-  <!-- TODO: put footer here -->
   <footer
     class="fixed bottom-0 left-0 flex items-center justify-around w-full h-14 bg-primary-base"
   >

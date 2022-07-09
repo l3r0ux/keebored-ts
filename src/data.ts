@@ -1,19 +1,4 @@
-interface Post {
-  postId: string;
-  userId: string;
-  likes: number;
-  comments: number;
-  hasLiked: boolean;
-  imageURLs: string[];
-  audioURL: string;
-  chassis: string;
-  layout: string;
-  switches: string;
-  mountingStyle: string;
-  caseMaterial: string;
-  plateMaterial: string;
-  mods: string[];
-}
+import { Post } from "./models/post";
 
 const dummyPosts: Post[] = [
   {
@@ -26,7 +11,7 @@ const dummyPosts: Post[] = [
       "https://www.extremetech.com/wp-content/uploads/2020/01/TAE07156_Edit-640x353.jpg",
       "https://cdn.vox-cdn.com/thumbor/qUotpINIp7JDwIjLmQngnrpFvEE=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19606512/EN8QytwVAAAfPJh.jpeg",
     ],
-    audioURL: "../public/audio/my-keeb.m4a",
+    audioURL: "../public/audio/my-keeb.mp3",
     chassis: "Ziyou lang",
     layout: "65%",
     switches: "Akko CS Lavender Purple",
@@ -45,8 +30,8 @@ const dummyPosts: Post[] = [
       "https://cdn.vox-cdn.com/thumbor/qUotpINIp7JDwIjLmQngnrpFvEE=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19606512/EN8QytwVAAAfPJh.jpeg",
       "https://www.extremetech.com/wp-content/uploads/2020/01/TAE07156_Edit-640x353.jpg",
     ],
-    audioURL: "../public/audio/my-keeb.m4a",
-    chassis: "Ziyou lang",
+    audioURL: "../public/audio/my-keeb.mp3",
+    chassis: "KBD 67",
     layout: "65%",
     switches: "Akko CS Lavender Purple",
     mountingStyle: "Tray Mount",
@@ -54,6 +39,82 @@ const dummyPosts: Post[] = [
     plateMaterial: "Alluminum",
     mods: ["Tempest Mod", "Case Foam"],
   },
+  // {
+  //   postId: "3",
+  //   userId: "c",
+  //   likes: 5,
+  //   comments: 1,
+  //   hasLiked: false,
+  //   imageURLs: [
+  //     "https://cdn.vox-cdn.com/thumbor/qUotpINIp7JDwIjLmQngnrpFvEE=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19606512/EN8QytwVAAAfPJh.jpeg",
+  //     "https://www.extremetech.com/wp-content/uploads/2020/01/TAE07156_Edit-640x353.jpg",
+  //   ],
+  //   audioURL: "../public/audio/my-keeb.mp3",
+  //   chassis: "KBD 67",
+  //   layout: "65%",
+  //   switches: "Akko CS Lavender Purple",
+  //   mountingStyle: "Tray Mount",
+  //   caseMaterial: "Plastic",
+  //   plateMaterial: "Alluminum",
+  //   mods: ["Tempest Mod", "Case Foam"],
+  // },
+  // {
+  //   postId: "4",
+  //   userId: "d",
+  //   likes: 5,
+  //   comments: 1,
+  //   hasLiked: false,
+  //   imageURLs: [
+  //     "https://cdn.vox-cdn.com/thumbor/qUotpINIp7JDwIjLmQngnrpFvEE=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19606512/EN8QytwVAAAfPJh.jpeg",
+  //     "https://www.extremetech.com/wp-content/uploads/2020/01/TAE07156_Edit-640x353.jpg",
+  //   ],
+  //   audioURL: "../public/audio/my-keeb.mp3",
+  //   chassis: "KBD 67",
+  //   layout: "65%",
+  //   switches: "Akko CS Lavender Purple",
+  //   mountingStyle: "Tray Mount",
+  //   caseMaterial: "Plastic",
+  //   plateMaterial: "Alluminum",
+  //   mods: ["Tempest Mod", "Case Foam"],
+  // },
+  // {
+  //   postId: "5",
+  //   userId: "e",
+  //   likes: 5,
+  //   comments: 1,
+  //   hasLiked: false,
+  //   imageURLs: [
+  //     "https://cdn.vox-cdn.com/thumbor/qUotpINIp7JDwIjLmQngnrpFvEE=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19606512/EN8QytwVAAAfPJh.jpeg",
+  //     "https://www.extremetech.com/wp-content/uploads/2020/01/TAE07156_Edit-640x353.jpg",
+  //   ],
+  //   audioURL: "../public/audio/my-keeb.mp3",
+  //   chassis: "KBD 67",
+  //   layout: "65%",
+  //   switches: "Akko CS Lavender Purple",
+  //   mountingStyle: "Tray Mount",
+  //   caseMaterial: "Plastic",
+  //   plateMaterial: "Alluminum",
+  //   mods: ["Tempest Mod", "Case Foam"],
+  // },
+  // {
+  //   postId: "6",
+  //   userId: "f",
+  //   likes: 5,
+  //   comments: 1,
+  //   hasLiked: false,
+  //   imageURLs: [
+  //     "https://cdn.vox-cdn.com/thumbor/qUotpINIp7JDwIjLmQngnrpFvEE=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19606512/EN8QytwVAAAfPJh.jpeg",
+  //     "https://www.extremetech.com/wp-content/uploads/2020/01/TAE07156_Edit-640x353.jpg",
+  //   ],
+  //   audioURL: "../public/audio/my-keeb.mp3",
+  //   chassis: "KBD 67",
+  //   layout: "65%",
+  //   switches: "Akko CS Lavender Purple",
+  //   mountingStyle: "Tray Mount",
+  //   caseMaterial: "Plastic",
+  //   plateMaterial: "Alluminum",
+  //   mods: ["Tempest Mod", "Case Foam"],
+  // },
 ];
 
 export default dummyPosts;
